@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.oracle.assessment.endpoints.MeasurementsTest" duration-ms="5450" started-at="2022-06-10T20:36:15 CDT" finished-at="2022-06-10T20:36:21 CDT">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="5450" started-at="2022-06-10T20:36:15 CDT" finished-at="2022-06-10T20:36:21 CDT">
+      <class name="com.oracle.assessment.endpoints.MeasurementsTest">
+        <test-method status="PASS" signature="testClassSetup()[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="testClassSetup" is-config="true" duration-ms="7" started-at="2022-06-10T20:36:15 CDT" finished-at="2022-06-10T20:36:15 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClassSetup -->
+        <test-method status="PASS" signature="testMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="testMethodSetup" is-config="true" duration-ms="0" started-at="2022-06-10T20:36:15 CDT" finished-at="2022-06-10T20:36:15 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.oracle.assessment.endpoints.MeasurementsTest.tc001_verify_statusCode(java.lang.String,java.lang.String,org.json.JSONObject) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodSetup -->
+        <test-method status="PASS" signature="tc001_verify_statusCode(java.lang.String,java.lang.String,org.json.JSONObject)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="tc001_verify_statusCode" duration-ms="2420" started-at="2022-06-10T20:36:15 CDT" data-provider="fetchData_JSON" finished-at="2022-06-10T20:36:18 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tc001_verify_statusCode]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Verify measurements status response code]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"request":"date_from=2021-01-01&date_to=2021-01-02&limit=100&page=1&offset=0&sort=desc&radius=1000&country_id=mx&order_by=datetime","description":"Verify measurements status response code","validations":{"statusCode":"200"},"error":"The expected code 200 is not returned","rowID":"tc001_verify_statusCode"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_verify_statusCode -->
+        <test-method status="PASS" signature="tc001_verify_statusCode(java.lang.String,java.lang.String,org.json.JSONObject)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="tc001_verify_statusCode" duration-ms="855" started-at="2022-06-10T20:36:18 CDT" data-provider="fetchData_JSON" finished-at="2022-06-10T20:36:19 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tc002_verify_wrongStatusCode]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Verify messurements status response code is 422 when send a bad request (Wrong format date)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"request":"date_from=2021-01-011&date_to=2021-01-02&limit=100&page=1&offset=0&sort=desc&radius=1000&country_id=mx&order_by=datetime","configFile":"../openAq/src/test/configResources/config.properties","description":"Verify messurements status response code is 422 when send a bad request (Wrong format date)","validations":{"statusCode":"422"},"error":"The expected code is not the one returned","rowID":"tc002_verify_wrongStatusCode"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_verify_statusCode -->
+        <test-method status="PASS" signature="testMethodTeardown(org.testng.ITestResult)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="testMethodTeardown" is-config="true" duration-ms="0" started-at="2022-06-10T20:36:18 CDT" finished-at="2022-06-10T20:36:18 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc001_verify_statusCode status=SUCCESS method=MeasurementsTest.tc001_verify_statusCode(java.lang.String,java.lang.String,org.json.JSONObject)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodTeardown -->
+        <test-method status="PASS" signature="testMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="testMethodSetup" is-config="true" duration-ms="0" started-at="2022-06-10T20:36:18 CDT" finished-at="2022-06-10T20:36:18 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.oracle.assessment.endpoints.MeasurementsTest.tc001_verify_statusCode(java.lang.String,java.lang.String,org.json.JSONObject) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodSetup -->
+        <test-method status="PASS" signature="testMethodTeardown(org.testng.ITestResult)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="testMethodTeardown" is-config="true" duration-ms="1" started-at="2022-06-10T20:36:19 CDT" finished-at="2022-06-10T20:36:19 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc001_verify_statusCode status=SUCCESS method=MeasurementsTest.tc001_verify_statusCode(java.lang.String,java.lang.String,org.json.JSONObject)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodTeardown -->
+        <test-method status="PASS" signature="testMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="testMethodSetup" is-config="true" duration-ms="0" started-at="2022-06-10T20:36:19 CDT" finished-at="2022-06-10T20:36:19 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.oracle.assessment.endpoints.MeasurementsTest.tc002_verify_measurementByCity(java.lang.String,java.lang.String,org.json.JSONObject) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodSetup -->
+        <test-method status="PASS" signature="tc002_verify_measurementByCity(java.lang.String,java.lang.String,org.json.JSONObject)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="tc002_verify_measurementByCity" duration-ms="1435" started-at="2022-06-10T20:36:19 CDT" data-provider="fetchData_JSON" finished-at="2022-06-10T20:36:20 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tc002_verify_responseWithParams]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Verify measurements response when set City, Limit, Param]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"request":"date_from=2021-01-01&date_to=2021-01-02&page=1&offset=0&sort=desc&radius=1000&country_id=mx&order_by=datetime","schemaFile":"../openAq/src/test/java/com/oracle/assessment/resources/schemas/measurments.schema.json","description":"Verify measurements response when set City, Limit, Param","errorCode":"Connexion can not be establish, please validate manually before continue","validations":{"statusCode":"200"},"params":{"city":"JALISCO","parameter":"no2","limit":"250"},"errorCount":"The expected response should not exceed the limit set in the parameters","rowID":"tc002_verify_responseWithParams","errorParams":"Some differences were detected between the response and the parameters, the response contains different parameters"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002_verify_measurementByCity -->
+        <test-method status="PASS" signature="testMethodTeardown(org.testng.ITestResult)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="testMethodTeardown" is-config="true" duration-ms="0" started-at="2022-06-10T20:36:20 CDT" finished-at="2022-06-10T20:36:20 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc002_verify_measurementByCity status=SUCCESS method=MeasurementsTest.tc002_verify_measurementByCity(java.lang.String,java.lang.String,org.json.JSONObject)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodTeardown -->
+        <test-method status="PASS" signature="testMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="testMethodSetup" is-config="true" duration-ms="1" started-at="2022-06-10T20:36:20 CDT" finished-at="2022-06-10T20:36:20 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.oracle.assessment.endpoints.MeasurementsTest.tc002_verify_measurementByCity(java.lang.String,java.lang.String,org.json.JSONObject) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodSetup -->
+        <test-method status="PASS" signature="tc002_verify_measurementByCity(java.lang.String,java.lang.String,org.json.JSONObject)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="tc002_verify_measurementByCity" duration-ms="693" started-at="2022-06-10T20:36:20 CDT" data-provider="fetchData_JSON" finished-at="2022-06-10T20:36:21 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tc002.2_verify_responseWithParams]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Verify measurements response when set City, Limit, Param]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"request":"date_from=2021-01-01&date_to=2021-01-02&page=1&offset=0&sort=desc&radius=1000&country_id=mx&order_by=datetime","schemaFile":"../openAq/src/test/java/com/oracle/assessment/resources/schemas/measurments.schema.json","description":"Verify measurements response when set City, Limit, Param","errorCode":"Connexion can not be establish, please validate manually before continue","validations":{"statusCode":"200"},"params":{"city":"GUANAJUATO","parameter":"pm25","limit":"10000"},"errorCount":"The expected response should not exceed the limit set in the parameters","rowID":"tc002.2_verify_responseWithParams","errorParams":"Some differences were detected between the response and the parameters, the response contains different parameters"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002_verify_measurementByCity -->
+        <test-method status="PASS" signature="testMethodTeardown(org.testng.ITestResult)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="testMethodTeardown" is-config="true" duration-ms="0" started-at="2022-06-10T20:36:21 CDT" finished-at="2022-06-10T20:36:21 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc002_verify_measurementByCity status=SUCCESS method=MeasurementsTest.tc002_verify_measurementByCity(java.lang.String,java.lang.String,org.json.JSONObject)[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodTeardown -->
+        <test-method status="PASS" signature="testClassTeardown()[pri:0, instance:com.oracle.assessment.endpoints.MeasurementsTest@6325a3ee]" name="testClassTeardown" is-config="true" duration-ms="0" started-at="2022-06-10T20:36:21 CDT" finished-at="2022-06-10T20:36:21 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClassTeardown -->
+      </class> <!-- com.oracle.assessment.endpoints.MeasurementsTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.oracle.assessment.endpoints.MeasurementsTest -->
+</testng-results>

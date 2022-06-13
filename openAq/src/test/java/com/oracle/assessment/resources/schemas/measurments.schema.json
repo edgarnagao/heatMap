@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "limit": {
+          "type": "integer"
+        },
+        "found": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name",
+        "license",
+        "website",
+        "page",
+        "limit",
+        "found"
+      ]
+    },
+    "results": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "locationId": {
+              "type": "integer"
+            },
+            "location": {
+              "type": "string"
+            },
+            "parameter": {
+              "type": "string"
+            },
+            "value": {
+              "type": "number"
+            },
+            "date": {
+              "type": "object",
+              "properties": {
+                "utc": {
+                  "type": "string"
+                },
+                "local": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "utc",
+                "local"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "coordinates": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "number"
+                },
+                "longitude": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "country": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "isMobile": {
+              "type": "boolean"
+            },
+            "isAnalysis": {
+              "type": "boolean"
+            },
+            "entity": {
+              "type": "string"
+            },
+            "sensorType": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "locationId",
+            "location",
+            "parameter",
+            "value",
+            "date",
+            "unit",
+            "coordinates",
+            "country",
+            "city",
+            "isMobile",
+            "isAnalysis",
+            "entity",
+            "sensorType"
+          ]
+        }
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "meta",
+    "results"
+  ]
+}
+

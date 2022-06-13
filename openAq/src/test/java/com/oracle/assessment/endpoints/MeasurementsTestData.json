@@ -1,0 +1,65 @@
+{
+	"tc001_verify_statusCode": [
+      	{
+		  "rowID": "tc001_verify_statusCode",
+		  "description": "Verify measurements status response code",
+		  "request": "date_from=2021-01-01&date_to=2021-01-02&limit=100&page=1&offset=0&sort=desc&radius=1000&country_id=mx&order_by=datetime",
+		  "validations":
+			  {
+				  "statusCode": "200"
+			  },
+		  "error": "The expected code 200 is not returned"
+	  },
+		{
+			"rowID": "tc002_verify_wrongStatusCode",
+			"description": "Verify messurements status response code is 422 when send a bad request (Wrong format date)",
+			"configFile": "../openAq/src/test/configResources/config.properties",
+			"request": "date_from=2021-01-011&date_to=2021-01-02&limit=100&page=1&offset=0&sort=desc&radius=1000&country_id=mx&order_by=datetime",
+			"validations":
+			{
+				"statusCode": "422"
+			},
+			"error": "The expected code is not the one returned"
+		}
+	],
+	"tc002_verify_measurementByCity": [
+		{
+			"rowID": "tc002_verify_responseWithParams",
+			"description": "Verify measurements response when set City, Limit, Param",
+			"request": "date_from=2021-01-01&date_to=2021-01-02&page=1&offset=0&sort=desc&radius=1000&country_id=mx&order_by=datetime",
+			"schemaFile" : "../openAq/src/test/java/com/oracle/assessment/resources/schemas/measurments.schema.json",
+			"params": {
+				"city": "JALISCO",
+				"parameter": "no2",
+				"limit": "250"
+			},
+			"validations":
+			{
+				"statusCode": "200"
+			},
+			"errorCode": "Connexion can not be establish, please validate manually before continue",
+			"errorCount":"The expected response should not exceed the limit set in the parameters",
+			"errorParams": "Some differences were detected between the response and the parameters, the response contains different parameters"
+		},
+		{
+			"rowID": "tc002.2_verify_responseWithParams",
+			"description": "Verify measurements response when set City, Limit, Param",
+			"request": "date_from=2021-01-01&date_to=2021-01-02&page=1&offset=0&sort=desc&radius=1000&country_id=mx&order_by=datetime",
+			"schemaFile" : "../openAq/src/test/java/com/oracle/assessment/resources/schemas/measurments.schema.json",
+			"params": {
+				"city": "GUANAJUATO",
+				"parameter": "pm25",
+				"limit": "10000"
+			},
+			"validations":
+			{
+				"statusCode": "200"
+			},
+			"errorCode": "Connexion can not be establish, please validate manually before continue",
+			"errorCount":"The expected response should not exceed the limit set in the parameters",
+			"errorParams": "Some differences were detected between the response and the parameters, the response contains different parameters"
+		}
+	]
+}
+
+

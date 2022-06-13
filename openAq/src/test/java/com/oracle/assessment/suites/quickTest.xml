@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Jenkins_Test_Suite" parallel="false" thread-count="1" configfailurepolicy="continue">
+
+    <test name="Regression_Test" parallel="false">
+        <classes>
+            <class name="com.oracle.assessment.endpoints.MeasurementsTest"></class>
+        </classes>
+    </test>
+
+</suite>
